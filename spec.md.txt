@@ -1,0 +1,46 @@
+# Especificação - Catálogo de Roupas de Academia
+
+## 🧱 Estrutura do Projeto
+
+- index.html
+- css/style.css
+- js/script.js
+- docs/
+
+## 📦 Estrutura de Dados
+
+### Produto
+- id
+- nome
+- preço
+- categoria
+- imagem
+
+### Categoria
+- masculino
+- feminino
+- acessórios
+
+## 🔄 Funcionalidades
+
+### Listagem de Produtos
+Exibir produtos em formato de cards utilizando Bootstrap.
+
+### Filtro por Categoria
+Permitir filtrar produtos por categoria usando JavaScript.
+
+### Carrinho de Compras
+- Adicionar produtos
+- Listar itens adicionados
+- Calcular total
+
+## 🎨 Interface
+- Desenvolvida com Bootstrap
+- Layout responsivo
+- Uso de grid system
+
+## 📜 Tecnologias
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
