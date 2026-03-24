@@ -1,0 +1,20 @@
+# PRD - Catálogo de Roupas de Academia
+
+## 📌 Descrição do Projeto
+Este projeto consiste em um catálogo digital de roupas de academia, desenvolvido como uma aplicação web responsiva utilizando Bootstrap e JavaScript.
+
+## 🎯 Objetivo
+Permitir que usuários visualizem produtos de forma organizada, com foco em usabilidade e responsividade.
+
+## 👤 Público-alvo
+Pessoas interessadas em roupas fitness, praticantes de academia e esportes.
+
+## ⚙️ Funcionalidades principais
+- Visualização de produtos
+- Filtro por categorias (masculino e feminino)
+- Exibição de preço e imagem
+- Interface responsiva
+- Carrinho de compras simples
+
+## 📱 Plataforma
+Aplicação web acessível via navegador (desktop e mobile)
