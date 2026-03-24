@@ -1,6 +1,0 @@
-- **Identificação:** Seu nome completo e o nome/tema do projeto.
-- **Descrição:** Qual é o propósito do sistema e qual problema ele resolve.
-- **Atores do Sistema:** Quem vai usar a aplicação? (Ex: Visitante, Cliente Autenticado).
-- **Histórias de Usuário (Escopo):** Quais serão as funcionalidades da aplicação? Traduza as necessidades dos atores para o formato de **Histórias de Usuário** (User Stories).
-    - *Formato:* "Como [ator], eu quero [ação/funcionalidade] para que [motivo/valor]."
-    - *Exemplo:* "Como Administrador, quero cadastrar um novo produto informando nome e preço, para manter o catálogo da loja atualizado."
