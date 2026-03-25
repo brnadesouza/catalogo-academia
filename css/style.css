@@ -1,0 +1,36 @@
+body {
+  background-color: #000;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+.banner {
+  height: 90vh;
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+              url('../img/fitnesswoman-posing-gym.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Botões */
+.btn-warning {
+  background-color: orange;
+  border: none;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
