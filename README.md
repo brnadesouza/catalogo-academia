@@ -21,6 +21,22 @@ Link para o PDF
 - **JQuery** - Para realizar animações.
 - **JSON Server** - Para simular uma API Rest.
 
+## Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5.3.3
+- API ViaCEP
+
+## Justificativa
+
+O Bootstrap foi escolhido por ser um framework amplamente utilizado, com excelente suporte à responsividade e uma vasta biblioteca de componentes como cards, modais e navbar, que facilitam o desenvolvimento do layout.
+
+Além disso, o projeto é ativo e bem mantido no GitHub, garantindo estabilidade e compatibilidade futura.
+
+A API ViaCEP foi escolhida para permitir a busca automática de endereços a partir do CEP, melhorando a experiência do usuário no momento do cadastro ou finalização da compra.
+
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
 #### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.

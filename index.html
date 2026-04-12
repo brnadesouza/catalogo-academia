@@ -1,266 +1,323 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
 
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>GROW UP ATHLETIC | Loja</title>
+<html data-bs-theme="dark" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GROW UP ATHLETIC | Loja</title>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;900&amp;family=Manrope:wght@400;600;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-main fixed-top py-3">
+      <div
+        class="container-fluid px-4 d-flex align-items-center justify-content-between"
+      >
+        <div class="d-flex align-items-center gap-3">
+          <button
+            class="btn p-0 text-primary-orange"
+            data-bs-target="#menuDrawer"
+            data-bs-toggle="offcanvas"
+            type="button"
+          >
+            <span class="material-symbols-outlined fs-2">menu</span>
+          </button>
+          <h1
+            class="h4 mb-0 fw-black text-primary-orange fst-italic tracking-tighter d-none d-sm-block"
+          >
+            GROW UP
+          </h1>
+        </div>
+        <h1
+          class="h4 mb-0 fw-black text-primary-orange fst-italic tracking-tighter d-block d-sm-none"
+        >
+          GROW UP
+        </h1>
+        <div class="d-flex align-items-center gap-4">
+          <nav class="d-none d-lg-flex gap-4">
+            <a
+              class="text-decoration-none text-secondary small fw-bold text-uppercase"
+              href="#"
+              >Início</a
+            >
+            <a
+              class="text-decoration-none text-primary-orange small fw-bold text-uppercase"
+              href="#"
+              >Loja</a
+            >
+            <a
+              class="text-decoration-none text-secondary small fw-bold text-uppercase"
+              href="#"
+              >Suporte</a
+            >
+          </nav>
+          <button
+            class="btn p-0 text-primary-orange position-relative"
+            data-bs-target="#cartDrawer"
+            data-bs-toggle="offcanvas"
+            type="button"
+          >
+            <span class="material-symbols-outlined fs-2">shopping_cart</span>
+            <span class="cart-badge" id="cart-badge-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"/>
-
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-
-<link rel="stylesheet" href="css/style.css">
-
-<!-- CONFIG DO TAILWIND -->
-<script>
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        primary: "#ff9f4a",
-        background: "#0e0e0e",
-        "on-background": "#ffffff"
-      }
-    }
-  }
-}
-</script>
-</head>
-
-<body>
-
-  <body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
-    <h1 class="text-center text-3x1 mt-10">GROW UP ATHLETIC</h1>
-
-<!-- Overlay -->
-    <div class="fixed inset-0 bg-black/60 z-[60] opacity-0 pointer-events-none transition-opacity duration-300" id="overlay" onclick="closeAllPanels()">
+    <!-- Menu Drawer (Offcanvas) -->
+    <div class="offcanvas offcanvas-start" id="menuDrawer" tabindex="-1">
+      <div class="offcanvas-header p-4">
+        <h5 class="offcanvas-title fw-black text-primary-orange fst-italic">
+          GROW UP
+        </h5>
+        <button
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          type="button"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <p
+          class="px-4 pt-4 pb-2 small fw-bold text-secondary text-uppercase tracking-widest"
+          style="font-size: 10px"
+        >
+          Coleções
+        </p>
+        <nav class="nav flex-column">
+          <a
+            class="nav-link nav-link-custom active"
+            href="#"
+            onclick="filterFromMenu('TODOS')"
+          >
+            <span class="material-symbols-outlined me-3"
+              >local_fire_department</span
+            >
+            Mais Vendidos
+          </a>
+          <a
+            class="nav-link nav-link-custom"
+            href="#"
+            onclick="filterFromMenu('Leggings')"
+          >
+            <span class="material-symbols-outlined me-3">grid_view</span>
+            Leggings
+          </a>
+          <a
+            class="nav-link nav-link-custom"
+            href="#"
+            onclick="filterFromMenu('Tops')"
+          >
+            <span class="material-symbols-outlined me-3">checkroom</span> Tops
+          </a>
+          <a
+            class="nav-link nav-link-custom"
+            href="#"
+            onclick="filterFromMenu('Calçados')"
+          >
+            <span class="material-symbols-outlined me-3">ice_skating</span>
+            Calçados
+          </a>
+          <a
+            class="nav-link nav-link-custom"
+            href="#"
+            onclick="filterFromMenu('Acessórios')"
+          >
+            <span class="material-symbols-outlined me-3">fitness_center</span>
+            Acessórios
+          </a>
+        </nav>
+        <div class="mt-auto p-4 border-top border-dark-subtle opacity-50">
+          <p class="small mb-0 text-secondary">
+            Grow Up Athletic — Performance sem limites.
+          </p>
+        </div>
+      </div>
     </div>
 
-<!-- Product Details Modal -->
-  <div class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300" id="product-modal">
-    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()">
+    <!-- Cart Drawer (Offcanvas) -->
+    <div class="offcanvas offcanvas-end" id="cartDrawer" tabindex="-1">
+      <div class="offcanvas-header p-4">
+        <h5 class="offcanvas-title fw-black text-primary-orange fst-italic">
+          MEU CARRINHO
+        </h5>
+        <button
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          type="button"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column p-0">
+        <div
+          class="flex-grow-1 p-4 overflow-y-auto no-scrollbar"
+          id="cart-items-list"
+        >
+          <!-- Cart items dynamic -->
+        </div>
+        <div class="p-4 bg-dark-subtle">
+          <div class="d-flex justify-content-between mb-4">
+            <span class="text-secondary small fw-bold text-uppercase"
+              >Total</span
+            >
+            <span
+              class="text-primary-orange h4 mb-0 fw-black"
+              id="cart-total-price"
+              >R$ 0,00</span
+            >
+          </div>
+          <button
+            class="btn btn-whatsapp w-100 d-flex align-items-center justify-content-center gap-2"
+            onclick="finalizeWhatsApp()"
+          >
+            <svg
+              class="bi bi-whatsapp"
+              fill="currentColor"
+              height="20"
+              viewbox="0 0 16 16"
+              width="20"
+            >
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+              ></path>
+            </svg>
+            FINALIZAR VIA WHATSAPP
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="relative bg-neutral-900 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl border border-neutral-800 modal-enter flex flex-col no-scrollbar">
-    <div class="sticky top-0 right-0 p-4 flex justify-end z-10">
-      <button class="bg-black/50 text-white p-2 rounded-full backdrop-blur-md hover:bg-neutral-800 transition-colors" onclick="closeModal()">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-    </div>
-  <div class="px-6 pb-8" id="modal-content"></div>
-    </div>
-  </div>
 
-<!-- Navigation Drawer -->
-<aside class="fixed top-0 left-0 h-full w-80 bg-neutral-950 z-[70] -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl shadow-orange-500/5 flex flex-col py-8" id="navigation-drawer">
-    <div class="px-6 mb-10 flex items-center gap-3">
-      <h2 class="text-orange-500 font-lexend font-black italic text-2xl uppercase tracking-widest">GROW UP</h2>
-        <button class="ml-auto text-neutral-400 active:scale-95" onclick="closeAllPanels()">
-          <span class="material-symbols-outlined">close</span>
+    <!-- Main Content -->
+    <main style="padding-top: 72px; padding-bottom: 80px">
+      <!-- Hero -->
+      <section class="hero-section">
+        <img
+          alt="Hero"
+          class="hero-img"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN5CLdt23BZBbN59kPKxtcQnylmM47UxHQ1RuaC-C78M8eOIKDV1-s6HNldnjZuEn4lvDzYHla_W2aBU2Yadc42_3KWGxDLvCx4p_ItwTZIwJkOCYDvJzzMWtzc2aooIqJ2zgWaXHotVCOxwGsYWKAGQIjD3kNTc635sLCRiafBnoX6dHnT5dPNzoE95UZ0yp5ZE_VFqgTm2K_Jhra1UGkhNalkf5XZmhr5uuNHFnCHrFQKUx8rhCSapT8duvPV_f4dYBAPyZgQmU"
+        />
+        <div class="hero-gradient"></div>
+        <div class="container px-4">
+          <div class="max-w-700">
+            <h2
+              class="display-1 fw-black text-primary-orange fst-italic lh-1 mb-3"
+            >
+              GROW UP<br />ATHLETIC
+            </h2>
+            <p
+              class="h5 fw-bold text-uppercase tracking-widest text-light-emphasis"
+            >
+              Moda Fitness &amp; Acessórios de Alta Performance
+            </p>
+            <div
+              class="mt-4"
+              style="
+                width: 80px;
+                height: 6px;
+                background: var(--primary-orange);
+              "
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <section
+        class="container px-4 py-4 overflow-x-auto d-flex gap-2 no-scrollbar"
+        id="category-filters"
+      >
+        <button
+          class="filter-btn active"
+          onclick="filterCategory('TODOS', this)"
+        >
+          TODOS
         </button>
-    </div>
+        <button class="filter-btn" onclick="filterCategory('Leggings', this)">
+          Leggings
+        </button>
+        <button class="filter-btn" onclick="filterCategory('Tops', this)">
+          Tops
+        </button>
+        <button class="filter-btn" onclick="filterCategory('Calçados', this)">
+          Calçados
+        </button>
+        <button class="filter-btn" onclick="filterCategory('Acessórios', this)">
+          Acessórios
+        </button>
+      </section>
 
-  <p class="px-6 text-[10px] font-lexend font-bold text-neutral-500 tracking-[0.2em] mb-4">COLEÇÕES</p>
+      <!-- Product Grid -->
+      <section class="container px-4 mt-2">
+        <div class="row g-4" id="product-grid">
+          <!-- Products generated by JS -->
+        </div>
+      </section>
+    </main>
 
-  <nav class="flex flex-col">
-
-    <a class="flex items-center gap-4 bg-gradient-to-r from-orange-500/20 to-transparent text-orange-400 font-lexend font-bold p-6 transition-all border-l-4 border-orange-500" href="#" onclick="filterFromMenu('TODOS')">
-      <span class="material-symbols-outlined">local_fire_department</span>
-        <span>Mais Vendidos</span>
-    </a>
-
-    <a class="flex items-center gap-4 text-neutral-400 p-6 hover:bg-neutral-900/50 hover:text-orange-400 transition-all font-lexend font-bold" href="#" onclick="filterFromMenu('Leggings')">
-      <span class="material-symbols-outlined">grid_view</span>
-        <span>Leggings</span>
-    </a>
-
-    <a class="flex items-center gap-4 text-neutral-400 p-6 hover:bg-neutral-900/50 hover:text-orange-400 transition-all font-lexend font-bold" href="#" onclick="filterFromMenu('Tops')">
-      <span class="material-symbols-outlined">checkroom</span>
-        <span>Tops</span>
-    </a>
-
-    <a class="flex items-center gap-4 text-neutral-400 p-6 hover:bg-neutral-900/50 hover:text-orange-400 transition-all font-lexend font-bold" href="#" onclick="filterFromMenu('Calçados')">
-      <span class="material-symbols-outlined">ice_skating</span>
-        <span>Calçados</span>
-    </a>
-
-    <a class="flex items-center gap-4 text-neutral-400 p-6 hover:bg-neutral-900/50 hover:text-orange-400 transition-all font-lexend font-bold" href="#" onclick="filterFromMenu('Acessórios')">
-      <span class="material-symbols-outlined">fitness_center</span>
-        <span>Acessórios</span>
-    </a>
-  </nav>
-
-  <div class="mt-auto px-6 border-t border-neutral-900 pt-8">
-    <p class="text-xs text-neutral-500 leading-relaxed">Grow Up Athletic — Alta performance para quem não aceita limites.</p>
-  </div>
-</aside>
-
-<!-- Shopping Cart Panel -->
-<aside class="fixed top-0 right-0 h-full w-full sm:w-[85%] max-w-sm bg-neutral-950 z-[70] translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col" id="cart-panel">
-  <div class="p-6 flex items-center justify-between border-b border-neutral-900">
-    <h3 class="font-headline font-black text-lg text-primary uppercase italic">MEU CARRINHO</h3>
-      <button class="text-neutral-400 active:scale-90" onclick="closeAllPanels()">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-  </div>
-
-  <div class="flex-grow overflow-y-auto p-6 space-y-6 no-scrollbar" id="cart-items-container"></div>
-
-  <div class="p-6 bg-neutral-900/50 space-y-4">
-    <div class="flex justify-between">
-      <span class="text-neutral-400 text-xs uppercase font-bold">Total</span>
-      <span class="text-primary font-lexend font-black text-xl" id="cart-panel-total">R$ 0,00</span>
-    </div>
-
-      <button class="w-full bg-[#25D366] text-white font-black py-4 rounded-sm tracking-widest text-sm active:scale-95 transition-all flex items-center justify-center gap-2" onclick="finalizeWhatsApp()"><svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.538-2.961-2.654-.087-.116-.708-.941-.708-1.795 0-.855.449-1.277.608-1.45.16-.174.348-.217.464-.217.115 0 .232 0 .333.005.109.004.258-.041.405.32.144.355.493 1.203.536 1.29.043.087.072.188.014.305-.058.116-.087.188-.174.289-.087.101-.183.227-.261.306-.087.087-.179.183-.077.36.102.177.452.746.969 1.206.666.592 1.229.776 1.403.863.174.087.276.072.377-.043.101-.116.435-.507.551-.68.116-.174.232-.145.391-.087.159.058 1.014.478 1.188.565.174.087.29.13.333.203.044.072.044.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.176L2.047 22l5.022-1.32c1.472.853 3.179 1.32 4.931 1.32 5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg> FINALIZAR VIA WHATSAPP</button>
-  </div>
-</aside>
-
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-xl shadow-[0_10px_30px_-15px_rgba(255,159,74,0.1)] flex justify-between items-center px-4 md:px-12 py-4">
-  <div class="flex items-center gap-4">
-    <button class="flex items-center justify-center p-2 -ml-2 active:scale-95 duration-150 transition-colors hover:text-orange-300" onclick="toggleDrawer()">
-      <span class="material-symbols-outlined text-orange-400 text-3xl">menu</span>
-    </button>
-      <h1 class="hidden sm:block text-2xl font-black text-orange-500 italic font-lexend uppercase tracking-tighter">GROW UP</h1>
-  </div>
-
-  <h1 class="sm:hidden text-2xl font-black text-orange-500 italic font-lexend uppercase tracking-tighter">GROW UP</h1>
-
-  <div class="flex items-center gap-4 md:gap-8">
-    <nav class="hidden lg:flex items-center gap-6">
-      <a class="text-neutral-400 hover:text-orange-400 font-bold text-xs uppercase tracking-widest transition-colors" href="#">Início</a>
-        <a class="text-orange-400 font-bold text-xs uppercase tracking-widest transition-colors" href="#">Loja</a>
-          <a class="text-neutral-400 hover:text-orange-400 font-bold text-xs uppercase tracking-widest transition-colors" href="#">Suporte</a>
+    <!-- Bottom Nav (Mobile) -->
+    <nav class="bottom-nav d-lg-none">
+      <div class="container-fluid d-flex justify-content-around">
+        <a
+          class="bottom-nav-item active d-flex flex-column align-items-center"
+          href="#"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+          <span class="material-symbols-outlined">home</span>
+          <span>Início</span>
+        </a>
+        <a
+          class="bottom-nav-item d-flex flex-column align-items-center"
+          href="#"
+          onclick="
+            document
+              .getElementById('product-grid')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          <span class="material-symbols-outlined">shopping_bag</span>
+          <span>Loja</span>
+        </a>
+        <a
+          class="bottom-nav-item d-flex flex-column align-items-center"
+          data-bs-target="#cartDrawer"
+          data-bs-toggle="offcanvas"
+          href="#"
+        >
+          <span class="material-symbols-outlined">shopping_cart</span>
+          <span>Carrinho</span>
+        </a>
+      </div>
     </nav>
 
-    <button class="relative flex items-center justify-center p-2 -mr-2 active:scale-95 duration-150 transition-colors hover:text-orange-300" id="cart-icon-btn" onclick="toggleCart()">
-      <span class="material-symbols-outlined text-orange-400 text-3xl">shopping_cart</span>
-        <span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full ring-2 ring-neutral-950" id="cart-badge">0</span>
-    </button>
-  </div>
-</header>
-
-<main class="pt-16 pb-32">
-
-<!-- Hero Section -->
-<section class="relative h-[450px] md:h-[600px] overflow-hidden flex flex-col justify-end px-6 md:px-12 pb-12 md:pb-24">
-  <img alt="Hero Image" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN5CLdt23BZBbN59kPKxtcQnylmM47UxHQ1RuaC-C78M8eOIKDV1-s6HNldnjZuEn4lvDzYHla_W2aBU2Yadc42_3KWGxDLvCx4p_ItwTZIwJkOCYDvJzzMWtzc2aooIqJ2zgWaXHotVCOxwGsYWKAGQIjD3kNTc635sLCRiafBnoX6dHnT5dPNzoE95UZ0yp5ZE_VFqgTm2K_Jhra1UGkhNalkf5XZmhr5uuNHFnCHrFQKUx8rhCSapT8duvPV_f4dYBAPyZgQmU"/>
-    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
-      <div class="relative z-10 max-w-4xl mx-auto w-full">
-        <h2 class="font-headline font-black text-6xl md:text-8xl text-primary leading-[0.85] uppercase tracking-tighter -ml-1">
-          GROW UP<br/>ATHLETIC
-        </h2>
-          <p class="font-headline text-secondary text-lg md:text-2xl font-bold tracking-widest mt-4 uppercase">
-          Moda Fitness &amp; Acessórios de Alta Performance
-        </p>
-            <div class="w-16 md:w-32 h-1.5 bg-primary mt-8"></div>
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              type="button"
+            ></button>
+          </div>
+          <div class="modal-body p-4" id="modal-body-content">
+            <!-- Dynamic modal content -->
+          </div>
+        </div>
       </div>
-</section>
-
-<div class="max-w-7xl mx-auto w-full">
-
-<!-- Categories / Chips -->
-  <section class="px-6 md:px-12 py-8 overflow-x-auto flex gap-3 no-scrollbar" id="category-filters">
-    <button class="bg-primary text-on-primary px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest flex-shrink-0 transition-all border border-primary" id="cat-todos" onclick="filterCategory('TODOS', this)">TODOS</button>
-      <button class="bg-neutral-900 text-on-surface-variant px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex-shrink-0 transition-all border border-neutral-800 hover:border-primary/50" id="cat-leggings" onclick="filterCategory('Leggings', this)">Leggings</button>
-        <button class="bg-neutral-900 text-on-surface-variant px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex-shrink-0 transition-all border border-neutral-800 hover:border-primary/50" id="cat-tops" onclick="filterCategory('Tops', this)">Tops</button>
-          <button class="bg-neutral-900 text-on-surface-variant px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex-shrink-0 transition-all border border-neutral-800 hover:border-primary/50" id="cat-calcados" onclick="filterCategory('Calçados', this)">Calçados</button>
-            <button class="bg-neutral-900 text-on-surface-variant px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest flex-shrink-0 transition-all border border-neutral-800 hover:border-primary/50" id="cat-acessorios" onclick="filterCategory('Acessórios', this)">Acessórios</button>
-  </section>
-
-<!-- Product Grid -->
-  <section class="px-6 md:px-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-12" id="product-grid">
-<!-- Card 1 -->
-    <div class="product-card group relative flex flex-col bg-surface-container-low rounded-sm overflow-hidden" data-category="Leggings" id="prod-kinetic">
-      <div class="relative h-64 md:h-80 overflow-hidden cursor-pointer" onclick="openProductDetail('prod-kinetic')">
-        <img alt="Product 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsF7AKM5Ep5XizHkC12Ii3gza6_gGEuem7Thv22_JJdnAMOhEuuYnNISutpW6_CkfUSWcP-zpjuuI6SN3tbHzcFR6Ks-wCIQNbcLsHER8HqVTtejuiDyXJW2z0IRhZbe_cK5NiIVxY0a3uvxZw14u5AfIq4MxhTlwxbqsWexvP9fBdG72WKr45n9TVAK2lb4PsyLuPyFcJULE1ajb-vghPOgChzDlJ7vcZTIuGxJ-6Gn_AwJ20jD-VssriU4nSySLQR2YAy8PglUw"/>
-          <div class="absolute inset-0 chrome-sheen pointer-events-none"></div>
-            <div class="absolute top-2 left-2 bg-primary text-on-primary text-[10px] font-black px-2 py-0.5 rounded-sm shadow-lg">NOVO</div>
-      </div>
-  <div class="p-4 flex flex-col flex-grow">
-    <h3 class="font-headline text-sm md:text-base font-bold text-on-surface uppercase tracking-tight cursor-pointer hover:text-primary transition-colors line-clamp-1" onclick="openProductDetail('prod-kinetic')">KINETIC LEGGINGS</h3>
-      <p class="text-primary font-lexend font-black text-lg mt-1">R$ 189,90</p>
-        <button class="mt-4 w-full btn-premium-orange text-on-primary font-black text-[10px] tracking-widest py-3 rounded-sm transition-all active:scale-95 flex items-center justify-center gap-2" onclick="openProductDetail('prod-kinetic')">
-          <span class="material-symbols-outlined text-sm">visibility</span> VER PRODUTO
-        </button>
-  </div>
     </div>
-
-<!-- Card 2 -->
-<div class="product-card group relative flex flex-col bg-surface-container-low rounded-sm overflow-hidden" data-category="Calçados" id="prod-chrome">
-  <div class="relative h-64 md:h-80 overflow-hidden cursor-pointer" onclick="openProductDetail('prod-chrome')">
-    <img alt="Product 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0JXRf-_Cfuq_9I2QwNTDF_KMowLp8eJGYkhvVN71JA6uMZ6gceLCBKwrly_wrKHRKOGkl7pSmAgmyZrqxsdHd713eQxC1zky8PrP5fV2Up2Uf0NTYUXXbcrJ8XQyNmcE3tjM_s18hwb2iZ1hmlzJW91jnV31lJJ47i_cooNZ75F71HFKfE6KTeocje3aji1p_EaVmQqgT6dt0dZkBplX6CuMl2_vqXGcK6n6RkMbFlZm0Fd0kc83R4wtVtsGxnrIiMUJhFu02gIk"/>
-      <div class="absolute inset-0 chrome-sheen pointer-events-none"></div>
-  </div>
-
-  <div class="p-4 flex flex-col flex-grow">
-    <h3 class="font-headline text-sm md:text-base font-bold text-on-surface uppercase tracking-tight cursor-pointer hover:text-primary transition-colors line-clamp-1" onclick="openProductDetail('prod-chrome')">CHROME RUNNER V1</h3>
-      <p class="text-primary font-lexend font-black text-lg mt-1">R$ 459,00</p>
-        <button class="mt-4 w-full btn-premium-orange text-on-primary font-black text-[10px] tracking-widest py-3 rounded-sm transition-all active:scale-95 flex items-center justify-center gap-2" onclick="openProductDetail('prod-chrome')">
-          <span class="material-symbols-outlined text-sm">visibility</span> VER PRODUTO
-        </button>
-  </div>
-</div>
-
-<!-- Card 3 -->
-<div class="product-card group relative flex flex-col bg-surface-container-low rounded-sm overflow-hidden" data-category="Tops" id="prod-core">
-  <div class="relative h-64 md:h-80 overflow-hidden cursor-pointer" onclick="openProductDetail('prod-core')">
-    <img alt="Product 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxrUPAbHPPiRIRdYX9_qlgsGCKwfXH6AEf4AnJXaxnhYfzHJHFukV0sl0OC2MfFEZ_vIyhWmtWRtDqAJy1MHlrRQmEhY3bxXXF5pDr8NZmx84-UJDcXPOrsxoGudthTNUA-QNspaLZrpBrcvYtmCBJyC22QW6cqc1VPBmcz0s6P8X2-YcpjHcQXPY8yUrbPc7DlgUCYTaW6KVJMZqD_Tj-LDJrFX9oWiNeYD5jx66EdFi8AOblgmn_qDHodEhXdjWOXFb7dxstlbk"/>
-      <div class="absolute inset-0 chrome-sheen pointer-events-none"></div>
-        <div class="absolute top-2 right-2 bg-white/10 backdrop-blur-sm text-secondary text-[10px] font-bold px-2 py-0.5 rounded-sm">ESSENCIAL</div>
-  </div>
-
-  <div class="p-4 flex flex-col flex-grow">
-    <h3 class="font-headline text-sm md:text-base font-bold text-on-surface uppercase tracking-tight cursor-pointer hover:text-primary transition-colors line-clamp-1" onclick="openProductDetail('prod-core')">CORE TANK TOP</h3>
-      <p class="text-primary font-lexend font-black text-lg mt-1">R$ 89,90</p>
-        <button class="mt-4 w-full btn-premium-orange text-on-primary font-black text-[10px] tracking-widest py-3 rounded-sm transition-all active:scale-95 flex items-center justify-center gap-2" onclick="openProductDetail('prod-core')">
-          <span class="material-symbols-outlined text-sm">visibility</span> VER PRODUTO
-        </button>
-  </div>
-</div>
-
-<!-- Card 4 -->
-<div class="product-card group relative flex flex-col bg-surface-container-low rounded-sm overflow-hidden" data-category="Leggings" id="prod-strike">
-  <div class="relative h-64 md:h-80 overflow-hidden cursor-pointer" onclick="openProductDetail('prod-strike')">
-    <img alt="Product 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT-RRx3HHrAmadFVpl5K-vwG7fWtjMJ0aoqAnG0cixRHOj4CZKVWFgTDLQJew4_ZiI-E8UMSx0bkAwAy16cNwdyq5Df1j6V1hxGdkEKKWSPbSdrr5cfxYOQkZLDtjRyVgl_Gf1XFC9_-NfE0Xns2YC4VYFUOtdzGEGvYokMJLpE5bMLeSinpnqQeYYYCA_tKo4kdntX7Jl9NZOm64hkHGe-tG5KAjEPvGh99pfkK2-TBY4SIBPw25deqNgjSrEI4T6b8hHUqhXRQs"/>
-      <div class="absolute inset-0 chrome-sheen pointer-events-none"></div>
-  </div>
-
-  <div class="p-4 flex flex-col flex-grow">
-    <h3 class="font-headline text-sm md:text-base font-bold text-on-surface uppercase tracking-tight cursor-pointer hover:text-primary transition-colors line-clamp-1" onclick="openProductDetail('prod-strike')">STRIKE SHORTS</h3>
-      <p class="text-primary font-lexend font-black text-lg mt-1">R$ 124,90</p>
-        <button class="mt-4 w-full btn-premium-orange text-on-primary font-black text-[10px] tracking-widest py-3 rounded-sm transition-all active:scale-95 flex items-center justify-center gap-2" onclick="openProductDetail('prod-strike')">
-          <span class="material-symbols-outlined text-sm">visibility</span> VER PRODUTO
-        </button>
-  </div>
-</div>
-</section>
-</div>
-</main>
-
-<!-- BottomNavBar (Mobile only) -->
-<nav class="lg:hidden fixed bottom-0 left-0 w-full flex justify-around items-center pb-safe pt-2 px-4 bg-neutral-950/90 backdrop-blur-2xl z-50 rounded-t-sm shadow-[0_-10px_40px_rgba(0,0,0,0.8)]">
-  <div class="flex flex-col items-center justify-center text-neutral-500 py-2 px-4 hover:bg-neutral-800 transition-all active:translate-y-0.5 duration-200" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-    <span class="material-symbols-outlined">home</span>
-      <span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Início</span>
-  </div>
-
-  <div class="flex flex-col items-center justify-center text-orange-500 bg-orange-500/10 rounded-sm py-2 px-4 hover:bg-neutral-800 transition-all active:translate-y-0.5 duration-200" onclick="document.getElementById('product-grid').scrollIntoView({ behavior: 'smooth', block: 'start' })">
-    <span class="material-symbols-outlined">shopping_bag</span>
-      <span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Loja</span>
-  </div>
-
-  <div class="flex flex-col items-center justify-center text-neutral-500 py-2 px-4 hover:bg-neutral-800 transition-all active:translate-y-0.5 duration-200" onclick="toggleCart()">
-    <span class="material-symbols-outlined">shopping_cart</span>
-      <span class="font-['Manrope'] font-bold text-[10px] uppercase tracking-widest mt-1">Carrinho</span>
-  </div>
-</nav>
-
-  <script src="js/script.js"></script>
-
-</body>
+    <!-- Bootstrap JS Bundle -->
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -6,11 +6,11 @@
 - css/style.css
 - js/script.js
 - docs/
+- img/
 
 ## 📦 Estrutura de Dados
 
 ### Produto
-- id
 - nome
 - preço
 - categoria
@@ -44,3 +44,15 @@ Permitir filtrar produtos por categoria usando JavaScript.
 - CSS
 - Bootstrap
 - JavaScript
+
+# Especificação Técnica
+
+## Framework CSS
+- Bootstrap v5.3.3
+
+## API Pública
+- ViaCEP API v1
+
+## Observações
+- O Bootstrap será utilizado para layout responsivo e componentes UI.
+- A API ViaCEP será usada para preenchimento automático de endereço.
