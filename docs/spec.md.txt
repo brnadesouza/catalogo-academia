@@ -51,8 +51,7 @@ Permitir filtrar produtos por categoria usando JavaScript.
 - Bootstrap v5.3.3
 
 ## API Pública
-- ViaCEP API v1
+- Fake Store API
 
-## Observações
-- O Bootstrap será utilizado para layout responsivo e componentes UI.
-- A API ViaCEP será usada para preenchimento automático de endereço.
+## Endpoint utilizado
+- https://fakestoreapi.com/products

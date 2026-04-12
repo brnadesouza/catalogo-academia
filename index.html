@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header -->
@@ -76,12 +76,11 @@
         </div>
       </div>
     </header>
-
-    <!-- Menu Drawer (Offcanvas) -->
+    <!-- Menu Drawer -->
     <div class="offcanvas offcanvas-start" id="menuDrawer" tabindex="-1">
       <div class="offcanvas-header p-4">
         <h5 class="offcanvas-title fw-black text-primary-orange fst-italic">
-          GROW UP
+          EXPLORAR
         </h5>
         <button
           class="btn-close btn-close-white"
@@ -90,54 +89,171 @@
         ></button>
       </div>
       <div class="offcanvas-body p-0">
-        <p
-          class="px-4 pt-4 pb-2 small fw-bold text-secondary text-uppercase tracking-widest"
-          style="font-size: 10px"
-        >
-          Coleções
-        </p>
         <nav class="nav flex-column">
-          <a
-            class="nav-link nav-link-custom active"
-            href="#"
-            onclick="filterFromMenu('TODOS')"
-          >
-            <span class="material-symbols-outlined me-3"
-              >local_fire_department</span
+          <div class="nav-link nav-link-custom">MASCULINO</div>
+          <div class="d-flex flex-column mb-3">
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'TODOS')"
+              >Ver Todos</a
             >
-            Mais Vendidos
-          </a>
-          <a
-            class="nav-link nav-link-custom"
-            href="#"
-            onclick="filterFromMenu('Leggings')"
-          >
-            <span class="material-symbols-outlined me-3">grid_view</span>
-            Leggings
-          </a>
-          <a
-            class="nav-link nav-link-custom"
-            href="#"
-            onclick="filterFromMenu('Tops')"
-          >
-            <span class="material-symbols-outlined me-3">checkroom</span> Tops
-          </a>
-          <a
-            class="nav-link nav-link-custom"
-            href="#"
-            onclick="filterFromMenu('Calçados')"
-          >
-            <span class="material-symbols-outlined me-3">ice_skating</span>
-            Calçados
-          </a>
-          <a
-            class="nav-link nav-link-custom"
-            href="#"
-            onclick="filterFromMenu('Acessórios')"
-          >
-            <span class="material-symbols-outlined me-3">fitness_center</span>
-            Acessórios
-          </a>
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'ACESSÓRIOS')"
+              >Acessórios</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'BERMUDAS')"
+              >Bermudas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'BLUSAS')"
+              >Blusas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'BONÉS')"
+              >Bonés</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'CALÇADOS')"
+              >Calçados</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'CAMISAS')"
+              >Camisas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'REGATAS')"
+              >Regatas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('MASCULINO', 'SHORTS')"
+              >Shorts</a
+            >
+          </div>
+          <div class="nav-link nav-link-custom">FEMININO</div>
+          <div class="d-flex flex-column mb-3">
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'TODOS')"
+              >Ver Todas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'ACESSÓRIOS')"
+              >Acessórios</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'BERMUDAS')"
+              >Bermudas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'BLUSAS')"
+              >Blusas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'BONÉS')"
+              >Bonés</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'CALÇADOS')"
+              >Calçados</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'CAMISAS')"
+              >Camisas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'CROPPED')"
+              >Cropped</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'MACACÕES')"
+              >Macacões</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'REGATAS')"
+              >Regatas</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'SHORTS')"
+              >Shorts</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('FEMININO', 'TOPS')"
+              >Tops</a
+            >
+          </div>
+          <div class="nav-link nav-link-custom">PLUS SIZE</div>
+          <div class="d-flex flex-column mb-3">
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('PLUS SIZE', 'TODOS')"
+              >Ver Todos</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('PLUS SIZE', 'BERMUDA')"
+              >Bermuda</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('PLUS SIZE', 'LEGGING')"
+              >Legging</a
+            >
+            <a
+              class="nav-link-sub"
+              href="#"
+              onclick="handleCategoryClick('PLUS SIZE', 'TOP')"
+              >Top</a
+            >
+          </div>
+          <div class="nav-link nav-link-custom">PERSONAL TRAINER</div>
+          <div class="d-flex flex-column mb-3">
+            <a class="nav-link-sub" href="#">Leo Bigode</a>
+            <a class="nav-link-sub" href="#">Christian Michel</a>
+          </div>
         </nav>
         <div class="mt-auto p-4 border-top border-dark-subtle opacity-50">
           <p class="small mb-0 text-secondary">
@@ -146,8 +262,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Cart Drawer (Offcanvas) -->
+    <!-- Cart Drawer -->
     <div class="offcanvas offcanvas-end" id="cartDrawer" tabindex="-1">
       <div class="offcanvas-header p-4">
         <h5 class="offcanvas-title fw-black text-primary-orange fst-italic">
@@ -163,9 +278,7 @@
         <div
           class="flex-grow-1 p-4 overflow-y-auto no-scrollbar"
           id="cart-items-list"
-        >
-          <!-- Cart items dynamic -->
-        </div>
+        ></div>
         <div class="p-4 bg-dark-subtle">
           <div class="d-flex justify-content-between mb-4">
             <span class="text-secondary small fw-bold text-uppercase"
@@ -197,7 +310,6 @@
         </div>
       </div>
     </div>
-
     <!-- Main Content -->
     <main style="padding-top: 72px; padding-bottom: 80px">
       <!-- Hero -->
@@ -205,7 +317,7 @@
         <img
           alt="Hero"
           class="hero-img"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN5CLdt23BZBbN59kPKxtcQnylmM47UxHQ1RuaC-C78M8eOIKDV1-s6HNldnjZuEn4lvDzYHla_W2aBU2Yadc42_3KWGxDLvCx4p_ItwTZIwJkOCYDvJzzMWtzc2aooIqJ2zgWaXHotVCOxwGsYWKAGQIjD3kNTc635sLCRiafBnoX6dHnT5dPNzoE95UZ0yp5ZE_VFqgTm2K_Jhra1UGkhNalkf5XZmhr5uuNHFnCHrFQKUx8rhCSapT8duvPV_f4dYBAPyZgQmU"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7hE8nTS4Sg9FX-56yhPQIZD4fEvCO_qhmYxi4whbolmd-iBksgV9BiRPA8MhLJyl2f55sntcrPE1zr_y_tIZYQuq9Hn8J0FOkaHaFgpsCVaPelqk5BhexBQECvRKOkmKiS5RMu7XshzehDLBXmSnuMuFqP1y13dyYqXbWh5i1yo3Aw4JH-Om-EwMpje1m7zyBxgzb88cKRGozjE6wRWnRGUpNXhPgMoDSYxyO2dYGbftQ6OVEZxp1qVsAcS2opv4njBfcSXYhkOw"
         />
         <div class="hero-gradient"></div>
         <div class="container px-4">
@@ -231,40 +343,40 @@
           </div>
         </div>
       </section>
-
-      <!-- Filters -->
-      <section
-        class="container px-4 py-4 overflow-x-auto d-flex gap-2 no-scrollbar"
-        id="category-filters"
-      >
-        <button
-          class="filter-btn active"
-          onclick="filterCategory('TODOS', this)"
+      <!-- Navigation Tags -->
+      <section class="container px-4 py-4">
+        <div
+          class="d-flex gap-2 mb-3 overflow-x-auto no-scrollbar"
+          id="main-category-tags"
         >
-          TODOS
-        </button>
-        <button class="filter-btn" onclick="filterCategory('Leggings', this)">
-          Leggings
-        </button>
-        <button class="filter-btn" onclick="filterCategory('Tops', this)">
-          Tops
-        </button>
-        <button class="filter-btn" onclick="filterCategory('Calçados', this)">
-          Calçados
-        </button>
-        <button class="filter-btn" onclick="filterCategory('Acessórios', this)">
-          Acessórios
-        </button>
-      </section>
-
-      <!-- Product Grid -->
-      <section class="container px-4 mt-2">
-        <div class="row g-4" id="product-grid">
-          <!-- Products generated by JS -->
+          <button
+            class="filter-btn active"
+            onclick="handleCategoryClick('TODOS')"
+          >
+            TODOS
+          </button>
+          <button class="filter-btn" onclick="handleCategoryClick('MASCULINO')">
+            MASCULINO
+          </button>
+          <button class="filter-btn" onclick="handleCategoryClick('FEMININO')">
+            FEMININO
+          </button>
+          <button class="filter-btn" onclick="handleCategoryClick('PLUS SIZE')">
+            PLUS SIZE
+          </button>
+        </div>
+        <div
+          class="d-flex gap-2 overflow-x-auto no-scrollbar d-none"
+          id="sub-category-tags"
+        >
+          <!-- Dynamic sub-categories -->
         </div>
       </section>
+      <!-- Product Grid -->
+      <section class="container px-4 mt-2">
+        <div class="row g-4" id="product-grid"></div>
+      </section>
     </main>
-
     <!-- Bottom Nav (Mobile) -->
     <nav class="bottom-nav d-lg-none">
       <div class="container-fluid d-flex justify-content-around">
@@ -299,7 +411,6 @@
         </a>
       </div>
     </nav>
-
     <!-- Product Modal -->
     <div class="modal fade" id="productModal" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -311,13 +422,12 @@
               type="button"
             ></button>
           </div>
-          <div class="modal-body p-4" id="modal-body-content">
-            <!-- Dynamic modal content -->
-          </div>
+          <div class="modal-body p-4" id="modal-body-content"></div>
         </div>
       </div>
     </div>
     <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

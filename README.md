@@ -35,7 +35,7 @@ O Bootstrap foi escolhido por ser um framework amplamente utilizado, com excelen
 
 Além disso, o projeto é ativo e bem mantido no GitHub, garantindo estabilidade e compatibilidade futura.
 
-A API ViaCEP foi escolhida para permitir a busca automática de endereços a partir do CEP, melhorando a experiência do usuário no momento do cadastro ou finalização da compra.
+A Fake Store API foi escolhida para simular um ambiente real de e-commerce, fornecendo dados dinâmicos como produtos, preços e imagens, tornando o sistema mais realista e interativo.
 
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
