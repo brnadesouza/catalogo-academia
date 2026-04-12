@@ -1,0 +1,839 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Leo Bigode Personal Trainer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style_leo.css"
+      data-purpose="custom-styling"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Back to Top Button -->
+    <div
+      id="backToTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <i class="bi bi-arrow-up text-xl font-bold"></i>
+    </div>
+    <!-- BEGIN: MainContent -->
+    <main class="flex-grow">
+      <!-- Hero Section (Logo) -->
+      <section
+        class="flex items-center justify-center p-8 py-16"
+        data-purpose="central-logo-container"
+      >
+        <div class="logo-circle shadow-2xl reveal active">
+          <img
+            alt="Leo Bigode Personal Trainer Logo"
+            class="logo-image"
+            src="img/leo_img/logo.png"
+          />
+        </div>
+      </section>
+      <!-- Benefits Section -->
+      <section class="benefits-section px-6 py-12 md:py-24">
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+        >
+          <!-- Left Column: Content -->
+          <div class="order-1 flex flex-col gap-8 reveal">
+            <header>
+              <h2
+                class="text-3xl md:text-5xl font-black italic mb-2 tracking-tighter"
+              >
+                <span class="outline-text block">PARA QUÊ</span>
+                <span class="text-white block uppercase"
+                  >Contratar um personal?</span
+                >
+              </h2>
+              <p class="text-gray-200 text-lg md:text-xl leading-snug">
+                Treinar sozinho pode até funcionar... Mas treinar com
+                <span class="font-bold">estratégia</span> transforma seu
+                resultado. Um personal cria um
+                <span class="font-bold">plano exclusivo</span> pra você.
+              </p>
+            </header>
+            <div class="flex flex-col gap-4">
+              <!-- Benefit 1 -->
+              <div class="benefit-card">
+                <div
+                  class="bg-white rounded-full p-1 flex items-center justify-center"
+                >
+                  <i class="bi bi-crosshair text-red-600 text-2xl"></i>
+                </div>
+                <span>TREINO AJUSTADO AO SEU OBJETIVO</span>
+              </div>
+              <!-- Benefit 2 -->
+              <div class="benefit-card">
+                <div
+                  class="bg-white rounded-full p-1 flex items-center justify-center"
+                >
+                  <i
+                    class="bi bi-check-circle-fill text-green-600 text-2xl"
+                  ></i>
+                </div>
+                <span>CORREÇÃO EM TEMPO REAL</span>
+              </div>
+              <!-- Benefit 3 -->
+              <div class="benefit-card">
+                <div
+                  class="bg-white rounded-full p-1 flex items-center justify-center"
+                >
+                  <i class="bi bi-shield-check text-gray-500 text-2xl"></i>
+                </div>
+                <span>EVITA LESÕES E ACELERA SEUS RESULTADOS</span>
+              </div>
+              <!-- Benefit 4 -->
+              <div class="benefit-card">
+                <div
+                  class="bg-white rounded-full p-1 flex items-center justify-center"
+                >
+                  <i class="bi bi-fire text-orange-600 text-2xl"></i>
+                </div>
+                <span>MANTÉM CONSTÂNCIA E DISCIPLINA</span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <p class="font-bold text-lg md:text-xl">
+                Resultado não é sorte. É método.
+                <span class="text-gray-300 font-normal"
+                  >Invista em você. Invista em resultado.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Right Column: Illustration -->
+          <div class="order-2 flex justify-center items-center reveal">
+            <img
+              alt="Trainer Illustration"
+              class="w-full max-w-md md:max-w-lg object-contain"
+              src="img/leo_img/rosca.PNG"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Transition Gradient -->
+      <div class="h-24 bg-gradient-to-b from-[#0a0a0a] to-black"></div>
+      <!-- Physical Evaluation Section -->
+      <section class="bg-black px-6 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto">
+          <header class="text-center mb-16 reveal">
+            <h2
+              class="text-4xl md:text-7xl font-black tracking-tight leading-none"
+            >
+              <span class="outline-text block text-3xl md:text-5xl"
+                >AVALIAÇÃO</span
+              >
+              <span class="text-white block">FÍSICA</span>
+            </h2>
+          </header>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Left: Cards -->
+            <div class="flex flex-col gap-10">
+              <!-- Card 1 -->
+              <div class="evaluation-card reveal">
+                <div class="evaluation-card-header">ACOMPANHAMENTO MENSAL</div>
+                <p class="text-center text-white font-medium mt-2">
+                  Avaliação física e postural realizada mensalmente
+                </p>
+              </div>
+              <!-- Card 2 -->
+              <div
+                class="evaluation-card reveal"
+                style="transition-delay: 0.1s"
+              >
+                <div class="evaluation-card-header">O QUE AVALIO</div>
+                <p class="text-center text-white font-medium mt-2">
+                  Composição corporal, postura, mobilidade e força
+                </p>
+              </div>
+              <!-- Card 3 -->
+              <div
+                class="evaluation-card reveal"
+                style="transition-delay: 0.2s"
+              >
+                <div class="evaluation-card-header">SUA EVOLUÇÃO</div>
+                <p class="text-center text-white font-medium mt-2">
+                  Acompanhe seu progresso com medições precisas. Visualize sua
+                  transformação e ajuste sua estratégia de treino.
+                </p>
+              </div>
+            </div>
+            <!-- Right: Before/After -->
+            <div class="flex flex-col items-center reveal">
+              <div
+                class="bg-[#1a1a1a] p-4 rounded-lg flex flex-col items-center shadow-lg border border-white/10"
+              >
+                <div class="flex gap-2">
+                  <div class="flex flex-col items-center">
+                    <img
+                      alt="Antes"
+                      class="w-full aspect-[3/4] object-cover rounded-sm"
+                      src="img/leo_img/antes.png"
+                    />
+                    <span class="mt-2 font-bold text-gray-400">ANTES</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <img
+                      alt="Depois"
+                      class="w-full aspect-[3/4] object-cover rounded-sm"
+                      src="img/leo_img/depois.png"
+                    />
+                    <span class="mt-2 font-bold text-gray-400">DEPOIS</span>
+                  </div>
+                </div>
+                <p class="mt-6 text-sm text-gray-400 text-center italic">
+                  Resultados reais exigem acompanhamento real.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Transition Gradient -->
+      <div class="h-24 bg-gradient-to-b from-black to-[#0a0a0a]"></div>
+      <!-- MFIT Platform Section -->
+      <section class="bg-[#0a0a0a] px-6 py-16 md:py-24">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12"
+        >
+          <!-- Left Content -->
+          <div class="w-full md:w-1/2 flex flex-col gap-10 reveal">
+            <header>
+              <h2
+                class="text-4xl md:text-5xl font-black tracking-tighter leading-none mb-6"
+              >
+                <span class="outline-text block text-2xl md:text-3xl"
+                  >ACESSO À</span
+                >
+                <span class="text-white block uppercase">Plataforma MFIT</span>
+              </h2>
+            </header>
+            <div class="space-y-8">
+              <div>
+                <h3
+                  class="text-white font-black text-xl mb-3 tracking-wider uppercase"
+                >
+                  Seu Treino
+                </h3>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-gray-300">
+                    <i class="bi bi-check2 text-white font-black"></i>
+                    <span>Exercícios detalhados com vídeos</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-gray-300">
+                    <i class="bi bi-check2 text-white font-black"></i>
+                    <span>Carga definida para cada exercício</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-gray-300">
+                    <i class="bi bi-check2 text-white font-black"></i>
+                    <span>Séries e repetições estruturadas</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3
+                  class="text-white font-black text-xl mb-3 tracking-wider uppercase"
+                >
+                  Na Palma da Mão
+                </h3>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-gray-300">
+                    <i class="bi bi-check2 text-white font-black"></i>
+                    <span>Acompanhamento da sua evolução</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-gray-300">
+                    <i class="bi bi-check2 text-white font-black"></i>
+                    <span>Histórico completo de treinos</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-gray-300">
+                    <i class="bi bi-check2 text-white font-black"></i>
+                    <span>Acesso 24h pelo celular</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Right App Mockups -->
+          <div
+            class="w-full md:w-1/2 flex justify-center items-center relative h-[500px] reveal"
+          >
+            <div class="relative w-full max-w-md">
+              <img
+                alt="MFIT App Interface"
+                class="w-full object-contain drop-shadow-[0_20px_50px_rgba(255,255,255,0.05)]"
+                src="img/leo_img/mfit2.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Transition Gradient -->
+      <div class="h-24 bg-gradient-to-b from-[#0a0a0a] to-black"></div>
+      <!-- Nutritional Coaching Section -->
+      <section class="bg-black px-6 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+            <!-- Left: Illustration -->
+            <div class="w-full md:w-1/2 reveal">
+              <img
+                alt="Nutritional Coaching Illustration"
+                class="w-full rounded-2xl shadow-xl border border-white/5"
+                src="img/leo_img/cozinha.png"
+              />
+            </div>
+            <!-- Right Content -->
+            <div class="w-full md:w-1/2 reveal">
+              <header class="mb-8">
+                <h2
+                  class="text-4xl md:text-5xl font-black tracking-tighter leading-none mb-6"
+                >
+                  <span
+                    class="outline-text block text-2xl md:text-3xl uppercase"
+                    >ACOMPANHAMENTO</span
+                  >
+                  <span class="text-white block uppercase">NUTRICIONAL</span>
+                </h2>
+              </header>
+              <p class="text-white text-xl md:text-2xl font-bold leading-tight">
+                Plano alimentar estruturado por nutricionista, alinhado ao seu
+                objetivo
+              </p>
+            </div>
+          </div>
+          <!-- Bottom Row: Features -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="flex items-start gap-4 reveal">
+              <div class="nutri-arrow-container mt-1 shrink-0">
+                <div class="nutri-arrow"></div>
+                <div class="nutri-arrow-inner"></div>
+              </div>
+              <div>
+                <h4 class="text-white font-black text-lg uppercase mb-1">
+                  MAIS PERFORMANCE
+                </h4>
+                <p class="text-gray-400">
+                  Combustível certo para treinos intensos
+                </p>
+              </div>
+            </div>
+            <!-- Feature 2 -->
+            <div
+              class="flex items-start gap-4 reveal"
+              style="transition-delay: 0.1s"
+            >
+              <div class="nutri-arrow-container mt-1 shrink-0">
+                <div class="nutri-arrow"></div>
+                <div class="nutri-arrow-inner"></div>
+              </div>
+              <div>
+                <h4 class="text-white font-black text-lg uppercase mb-1">
+                  MAIS RESULTADO
+                </h4>
+                <p class="text-gray-400">
+                  Alimentação potencializando o treino
+                </p>
+              </div>
+            </div>
+            <!-- Feature 3 -->
+            <div
+              class="flex items-start gap-4 reveal"
+              style="transition-delay: 0.2s"
+            >
+              <div class="nutri-arrow-container mt-1 shrink-0">
+                <div class="nutri-arrow"></div>
+                <div class="nutri-arrow-inner"></div>
+              </div>
+              <div>
+                <h4 class="text-white font-black text-lg uppercase mb-1">
+                  MAIS CONSISTÊNCIA
+                </h4>
+                <p class="text-gray-400">Hábitos sustentáveis a longo prazo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Transition Gradient to My Coaching -->
+      <div class="h-24 bg-gradient-to-b from-black to-black"></div>
+      <!-- My Coaching Section -->
+      <section class="bg-black px-6 py-16 md:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+          <header class="text-center mb-16 reveal">
+            <h2
+              class="text-4xl md:text-7xl font-black tracking-tighter leading-none"
+            >
+              <span class="outline-text block text-3xl md:text-5xl uppercase"
+                >COM O MEU</span
+              >
+              <span
+                class="text-white block uppercase drop-shadow-[0_2px_10px_rgba(255,255,255,0.3)]"
+                >ACOMPANHAMENTO</span
+              >
+            </h2>
+          </header>
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center w-full"
+          >
+            <!-- Left: Two Red Cards -->
+            <div class="order-2 md:order-1 md:col-span-4 flex flex-col gap-8">
+              <!-- Card 1 -->
+              <div class="evaluation-card bg-[#8b0000] !mt-0 !pt-8 reveal">
+                <div class="evaluation-card-header !text-[#8b0000] !bg-white">
+                  TREINO COM PROPÓSITO
+                </div>
+                <p class="text-center text-white font-medium">
+                  Você não vai treinar no automático. Vai treinar com
+                  estratégia, direção e intensidade.
+                </p>
+              </div>
+              <!-- Card 2 -->
+              <div
+                class="evaluation-card bg-[#8b0000] !mt-0 !pt-8 reveal"
+                style="transition-delay: 0.1s"
+              >
+                <div class="evaluation-card-header !text-[#8b0000] !bg-white">
+                  EVOLUÇÃO CONSTANTE
+                </div>
+                <p class="text-center text-white font-medium">
+                  Treinos personalizados para o seu objetivo. Sem estagnação.
+                </p>
+              </div>
+            </div>
+            <!-- Center: Trainer Illustration -->
+            <div
+              class="order-1 md:order-2 md:col-span-4 flex justify-center items-center reveal"
+            >
+              <img
+                alt="Trainer Illustration"
+                class="w-64 md:w-full max-w-xs object-contain"
+                src="img/leo_img/bao.png"
+              />
+            </div>
+            <!-- Right: Large Red Card -->
+            <div
+              class="order-3 md:order-3 md:col-span-4 h-full flex items-stretch"
+            >
+              <div
+                class="evaluation-card bg-[#8b0000] !mt-0 !pt-10 flex flex-col justify-center items-center w-full h-full min-h-[200px] reveal"
+                style="transition-delay: 0.2s"
+              >
+                <div class="evaluation-card-header !text-[#8b0000] !bg-white">
+                  SUA MELHOR VERSÃO
+                </div>
+                <div class="text-center text-white font-medium space-y-4">
+                  <p>Acompanhamento de verdade, de perto.</p>
+                  <p class="font-bold">Pare de adiar.</p>
+                  <p>
+                    Entre para o time e comece agora a construir a sua melhor
+                    version.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Transition Gradient Section -->
+      <div class="h-24 section-transition-black-red"></div>
+      <!-- Pricing Section: PLANO INDIVIDUAL TREINO PRESENCIAL -->
+      <section class="bg-[#990000] px-6 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+          <header class="text-center mb-16 reveal">
+            <h2
+              class="text-4xl md:text-7xl font-black tracking-tighter leading-none text-white"
+            >
+              <span
+                class="outline-text block text-2xl md:text-4xl uppercase mb-2"
+                >PLANO INDIVIDUAL</span
+              >
+              <span class="block uppercase">TREINO PRESENCIAL</span>
+            </h2>
+          </header>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-5xl">
+            <!-- Left Card: TRIMENSTRAL -->
+            <div class="pricing-card shadow-2xl reveal">
+              <div
+                class="evaluation-card-header !text-[#141111] !bg-white uppercase"
+              >
+                TRIMENSTRAL
+              </div>
+              <div class="flex flex-col items-center gap-6 w-full">
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >2X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 450,00</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >3X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 650,00</div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Card: SEMESTRAL -->
+            <div
+              class="pricing-card shadow-2xl reveal"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="evaluation-card-header !text-[#141111] !bg-white uppercase"
+              >
+                SEMESTRAL
+              </div>
+              <div class="flex flex-col items-center gap-6 w-full">
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >2X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 425,00</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >3X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 650,00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="mt-16 text-center reveal">
+            <p
+              class="text-white font-bold text-sm md:text-base tracking-wide uppercase px-4"
+            >
+              CONSULTAR DISPONIBILIDADE DE VALORES PARA OUTRAS OPÇÕES DE
+              FREQUÊNCIA
+            </p>
+          </footer>
+        </div>
+      </section>
+      <!-- Pricing Section: PLANO EM DUPLA TREINO PRESENCIAL -->
+      <section
+        class="bg-[#990000] px-6 py-16 md:py-24 border-t border-white/10"
+      >
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+          <header class="text-center mb-16 reveal">
+            <h2
+              class="text-4xl md:text-7xl font-black tracking-tighter leading-none text-white"
+            >
+              <span
+                class="outline-text block text-2xl md:text-4xl uppercase mb-2"
+                >PLANO EM DUPLA</span
+              >
+              <span class="block uppercase">TREINO PRESENCIAL</span>
+            </h2>
+          </header>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-5xl">
+            <!-- Left Card: TRIMENSTRAL -->
+            <div class="pricing-card shadow-2xl reveal">
+              <div
+                class="evaluation-card-header !text-[#141111] !bg-white uppercase"
+              >
+                TRIMENSTRAL
+              </div>
+              <div class="flex flex-col items-center gap-6 w-full">
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >2X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 550,00</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >3X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 750,00</div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Card: SEMESTRAL -->
+            <div
+              class="pricing-card shadow-2xl reveal"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="evaluation-card-header !text-[#141111] !bg-white uppercase"
+              >
+                SEMESTRAL
+              </div>
+              <div class="flex flex-col items-center gap-6 w-full">
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >2X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 525,00</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <span
+                    class="text-white font-black text-lg tracking-widest uppercase"
+                    >3X POR SEMANA</span
+                  >
+                  <div class="price-pill">R$ 700,00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="mt-16 text-center reveal">
+            <p
+              class="text-white font-bold text-sm md:text-base tracking-wide uppercase px-4"
+            >
+              CONSULTAR DISPONIBILIDADE DE VALORES PARA OUTRAS OPÇÕES DE
+              FREQUÊNCIA
+            </p>
+          </footer>
+        </div>
+      </section>
+      <!-- Transition Gradient Section -->
+      <div class="h-24 bg-gradient-to-b from-[#990000] to-[#8b0000]"></div>
+      <!-- Consultoria Online Section -->
+      <section class="bg-[#8b0000] px-6 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+          <header class="text-center mb-16 reveal">
+            <h2
+              class="text-4xl md:text-6xl font-black tracking-tighter leading-none text-white text-center uppercase"
+            >
+              CONSULTORIA ONLINE<br />PERSONALIZADA
+            </h2>
+          </header>
+          <!-- Pricing Cards Row -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mb-12"
+          >
+            <!-- Mês Avulso -->
+            <div class="pricing-card !bg-[#0f0a0a] !pt-8 !rounded-xl reveal">
+              <div
+                class="evaluation-card-header !text-[#8b0000] !bg-white uppercase !font-black !text-base"
+              >
+                MÊS AVULSO
+              </div>
+              <div
+                class="flex flex-col items-center justify-center h-full pt-4"
+              >
+                <div
+                  class="price-pill !bg-[#8b0000] !text-white !px-8 !py-2 !text-lg !font-black"
+                >
+                  R$ 120,00
+                </div>
+              </div>
+            </div>
+            <!-- Trimestral -->
+            <div
+              class="pricing-card !bg-[#0f0a0a] !pt-8 !rounded-xl reveal"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="evaluation-card-header !text-[#8b0000] !bg-white uppercase !font-black !text-base"
+              >
+                TRIMESTRAL
+              </div>
+              <div
+                class="flex flex-col items-center justify-center h-full pt-4"
+              >
+                <div
+                  class="price-pill !bg-[#8b0000] !text-white !px-8 !py-2 !text-lg !font-black"
+                >
+                  R$ 100,00
+                </div>
+              </div>
+            </div>
+            <!-- Semestral -->
+            <div
+              class="pricing-card !bg-[#0f0a0a] !pt-8 !rounded-xl reveal"
+              style="transition-delay: 0.2s"
+            >
+              <div
+                class="evaluation-card-header !text-[#8b0000] !bg-white uppercase !font-black !text-base"
+              >
+                SEMESTRAL
+              </div>
+              <div
+                class="flex flex-col items-center justify-center h-full pt-4"
+              >
+                <div
+                  class="price-pill !bg-[#8b0000] !text-white !px-8 !py-2 !text-lg !font-black"
+                >
+                  R$ 89,00
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Nutritional Add-on Section -->
+          <div class="w-full max-w-3xl reveal">
+            <div class="pricing-card !bg-[#0f0a0a] !pt-10 !rounded-xl w-full">
+              <div
+                class="evaluation-card-header !text-[#8b0000] !bg-white uppercase !font-black !text-base !px-10"
+              >
+                ACOMPANHAMENTO NUTRICIONAL
+              </div>
+              <div class="flex flex-col items-center gap-4">
+                <div
+                  class="price-pill !bg-[#8b0000] !text-white !px-10 !py-2 !text-xl !font-black"
+                >
+                  R$ 80,00
+                </div>
+                <p class="text-white text-center text-lg font-medium">
+                  Por criação ou alteração de cardápio
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Transition Gradient Section -->
+      <div class="h-24 bg-gradient-to-b from-[#8b0000] to-[#990000]"></div>
+      <!-- NEW SECTION: READY TO START? -->
+      <section class="cta-section px-6 py-16 md:py-24">
+        <!-- Decorative X backgrounds -->
+        <div class="decorative-x x-top-left">X</div>
+        <div class="decorative-x x-bottom-right">X</div>
+        <div class="max-w-7xl mx-auto flex flex-col items-center relative z-10">
+          <!-- Heading & Subheading -->
+          <header class="text-center mb-16 reveal">
+            <h2
+              class="text-4xl md:text-7xl font-black tracking-tighter leading-none text-white mb-6 uppercase"
+            >
+              PRONTO PARA COMEÇAR?
+            </h2>
+            <p
+              class="text-white text-lg md:text-xl font-medium max-w-2xl mx-auto"
+            >
+              A sua melhor versão está esperando. Chega de esperar o momento
+              perfeito — o momento é agora.
+            </p>
+          </header>
+          <!-- Three Item Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-6xl">
+            <!-- Item 1 -->
+            <div class="flex flex-col items-center text-center group reveal">
+              <div
+                class="w-48 h-48 bg-white/10 rounded-full flex items-center justify-center p-6 mb-6 overflow-hidden border-2 border-white/20 transition-all group-hover:bg-white/20"
+              >
+                <img
+                  alt="Contact Journey"
+                  class="w-full h-full object-contain"
+                  src="img/leo_img/mexendo_celular.png"
+                />
+              </div>
+              <p class="text-white font-bold text-lg leading-snug">
+                Entre em contato comigo e inicie sua jornada hoje.
+              </p>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="flex flex-col items-center text-center group reveal"
+              style="transition-delay: 0.1s"
+            >
+              <div
+                class="w-48 h-48 bg-white/10 rounded-full flex items-center justify-center p-6 mb-6 overflow-hidden border-2 border-white/20 transition-all group-hover:bg-white/20"
+              >
+                <img
+                  alt="Options Available"
+                  class="w-full h-full object-contain"
+                  src="img/leo_img/ajuda.png"
+                />
+              </div>
+              <p class="text-white font-bold text-lg leading-snug">
+                Presencial, em dupla ou online — tem uma opção pra você.
+              </p>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="flex flex-col items-center text-center group reveal"
+              style="transition-delay: 0.2s"
+            >
+              <div
+                class="w-48 h-48 bg-white/10 rounded-full flex items-center justify-center p-6 mb-6 overflow-hidden border-2 border-white/20 transition-all group-hover:bg-white/20"
+              >
+                <img
+                  alt="Guaranteed Results"
+                  class="w-full h-full object-contain"
+                  src="img/leo_img/mao_cintura.png"
+                />
+              </div>
+              <p class="text-white font-bold text-lg leading-snug">
+                Método, disciplina e resultado garantido
+              </p>
+            </div>
+          </div>
+          <!-- Central Branding -->
+          <div class="mt-20 reveal">
+            <div
+              class="bg-white rounded-full p-4 w-64 h-64 md:w-80 md:h-80 mx-auto shadow-2xl flex items-center justify-center"
+            >
+              <img
+                alt="Leo Bigode Brand"
+                class="w-[85%] object-contain"
+                src="img/leo_img/logo.png"
+              />
+            </div>
+            <div class="text-center mt-8">
+              <h3
+                class="text-2xl md:text-3xl font-black text-white italic tracking-tighter uppercase"
+              >
+                RESULTADO NÃO É SORTE É MÉTODO
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- END: MainContent -->
+    <!-- BEGIN: FooterLinks -->
+    <footer
+      class="w-full p-8 md:px-12 flex flex-col md:flex-row justify-center items-center gap-8 bg-black border-t border-white/10"
+      data-purpose="contact-info-footer"
+    >
+      <!-- WhatsApp Contact -->
+      <a
+        class="flex items-center gap-3 hover:opacity-80 transition-opacity"
+        data-purpose="whatsapp-link"
+        href="https://wa.me/5542998518757"
+        target="_blank"
+      >
+        <div
+          class="bg-[#25D366] p-2 rounded-xl flex items-center justify-center"
+        >
+          <i class="bi bi-whatsapp text-white text-2xl"></i>
+        </div>
+        <span class="contact-text">(42) 99851-8757</span>
+      </a>
+      <!-- Instagram Contact -->
+      <a
+        class="flex items-center gap-3 hover:opacity-80 transition-opacity"
+        data-purpose="instagram-link"
+        href="https://instagram.com/leobigode.personal"
+        target="_blank"
+      >
+        <div
+          class="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-2 rounded-xl flex items-center justify-center"
+        >
+          <i class="bi bi-instagram text-white text-2xl"></i>
+        </div>
+        <span class="contact-text">@leobigode.personal</span>
+      </a>
+    </footer>
+    <!-- END: FooterLinks -->
+    <script src="js/script_leo.js"></script>
+  </body>
+</html>

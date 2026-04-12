@@ -1,0 +1,53 @@
+/* Tipografia */
+.varsity-font {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.condensed-font {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text-outline {
+  -webkit-text-stroke: 2px white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Layout */
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.bg-red-button {
+  background-color: #e30613;
+}
+
+/* Backgrounds */
+.closing-bg,
+.evaluation-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+  url(/img/christian_img/logo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gradientes */
+.gradient-divider-black-red {
+  background: linear-gradient(to bottom, #000, #dc2626);
+}
+
+.gradient-divider-red-black {
+  background: linear-gradient(to bottom, #dc2626, #000);
+}
+
+.gradient-divider-black-trans {
+  background: linear-gradient(to bottom, #000, rgba(0,0,0,0.6));
+}
