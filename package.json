@@ -23,9 +23,11 @@
   "homepage": "https://github.com/brnadesouza/catalogo-academia#readme",
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "jquery": "^4.0.0"
+    "jquery": "^4.0.0",
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "typescript": "^6.0.3"
   }
 }
