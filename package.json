@@ -1,0 +1,31 @@
+{
+  "name": "catalogo-academia",
+  "version": "1.0.0",
+  "description": "Catálogo de Roupa de Academia\r ### **Autor:** Bruna de Souza\r Este projeto tem como objetivo implementar progressivamente e de forma didática uma aplicação web inspirada em catálogo de roupa de academia.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brnadesouza/catalogo-academia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/brnadesouza/catalogo-academia/issues"
+  },
+  "homepage": "https://github.com/brnadesouza/catalogo-academia#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
