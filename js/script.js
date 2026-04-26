@@ -218,7 +218,7 @@ const productsData = [
             total += item.price * item.qty;
         });
         msg += `\n*TOTAL: R$ ${total.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}*`;
-        window.open(`https://wa.me/5500000000000?text=${encodeURIComponent(msg)}`, '_blank');
+        window.open(`https://wa.me/5542984311219?text=${encodeURIComponent(msg)}`, '_blank');
     }
 
     // Initialize

@@ -1,33 +1,22 @@
 {
   "name": "catalogo-academia",
   "version": "1.0.0",
-  "description": "Catálogo de Roupa de Academia\r ### **Autor:** Bruna de Souza\r Este projeto tem como objetivo implementar progressivamente e de forma didática uma aplicação web inspirada em catálogo de roupa de academia.",
+  "description": "Catálogo de roupa de academia com Bootstrap e integração de API.",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo \"Projeto rodando\"",
+    "deploy": "gh-pages -d ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brnadesouza/catalogo-academia.git"
+    "url": "https://github.com/brnadesouza/catalogo-academia.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Bruna de Souza",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/brnadesouza/catalogo-academia/issues"
-  },
-  "homepage": "https://github.com/brnadesouza/catalogo-academia#readme",
   "dependencies": {
-    "bootstrap": "^5.3.8",
-    "jquery": "^4.0.0",
-    "uuid": "^14.0.0"
+    "bootstrap": "^5.3.8"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "typescript": "^6.0.3"
+    "gh-pages": "^6.3.0"
   }
 }
