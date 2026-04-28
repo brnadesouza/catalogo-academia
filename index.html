@@ -6,10 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>GROW UP ATHLETIC | Loja</title>
     <!-- Bootstrap 5.3.3 CSS -->
-    <link
-      href="/assets/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;900&amp;family=Manrope:wght@400;600;800&amp;display=swap"
       rel="stylesheet"
@@ -20,7 +17,7 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Header -->
     <header class="header-main fixed-top py-3">
       <div
@@ -306,16 +303,12 @@
       </div>
     </div>
     <!-- Main Content -->
-    <main style="padding-top: 72px; padding-bottom: 80px">
+    <main class="flex-grow-1" style="padding-top: 72px; padding-bottom: 80px>
       <!-- Hero -->
       <section class="hero-section">
-        <img
-          alt="Hero"
-          class="hero-img"
-          src="assets/img/banner.jpeg"
-        />
+        <img alt="Hero" class="hero-img" src="/assets/img/banner.jpeg" />
         <div class="hero-gradient"></div>
-        <div class="container px-4">
+        <div class="container px-4 position-relative">
           <div class="max-w-700">
             <h2
               class="display-1 fw-black text-primary-orange fst-italic lh-1 mb-3"
@@ -421,8 +414,13 @@
         </div>
       </div>
     </div>
+
+    <footer class="mt-auto bg-neutral-950 text-center text-sm text-neutral-400 py-4">
+      © 2026 Grow Up Athletic — Todos os direitos reservados
+    </footer>
+
     <!-- Bootstrap JS Bundle -->
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>
