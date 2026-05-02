@@ -1,16 +1,104 @@
 const productsData = [
-        { id: 1, name: "Legging Iron Force V2", price: 189.90, category: "LEGGINGS", gender: "FEMININO", imgs: ["https://images.unsplash.com/photo-1506629082925-47f2492827c9?q=80&w=500&auto=format&fit=crop", "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=500&auto=format&fit=crop"], badge: "NEW", description: "Compressão de alto impacto com tecnologia Dry-Fit avançada. Design anatômico que valoriza o corpo." },
-        { id: 2, name: "Top Infinity Cross", price: 89.90, category: "TOPS", gender: "FEMININO", imgs: ["https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=500&auto=format&fit=crop", "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=500&auto=format&fit=crop"], badge: "TREND", description: "Suporte máximo para treinos intensos. Costas em X para total liberdade de movimento." },
-        { id: 3, name: "Camiseta Aero Performance", price: 124.90, category: "CAMISAS", gender: "MASCULINO", imgs: ["https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=500&auto=format&fit=crop", "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=500&auto=format&fit=crop"], badge: null, description: "Tecido ultra leve com micro-perfurações para máxima respirabilidade durante o treino." },
-        { id: 4, name: "Tênis Pulse Runner", price: 459.90, category: "CALÇADOS", gender: "MASCULINO", imgs: ["https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=500&auto=format&fit=crop", "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=500&auto=format&fit=crop"], badge: "DESTAQUE", description: "Amortecimento responsivo de última geração. Perfeito para corridas de longa distância e HIIT." },
+        { id: 1,
+  name: "Legging Cos Cruzado + Top Bicolor Azul Marinho/Off",
+  price: 199.00,
+  category: "LEGGING + TOP",
+  gender: "FEMININO",
+  imgs: [
+    "assets/img/roupas/top+legging/top-sabrina+legging-cos-cruzado-bicolor-azul-marinho-off/foto-1.jpeg",
+    "assets/img/roupas/top+legging/top-sabrina+legging-cos-cruzado-bicolor-azul-marinho-off/foto-2.jpeg",
+  ],
+  badge: "NEW",
+
+  description: "Peça ideal para treinos, com alta compressão e zero transparência.",
+
+  sizes: ["38 ao 42"],
+  composition: "Tecido Jacquard Canelado Compressão Kapana - 76% Poliamida 24% Elastano",
+  washing: "Lavar com sabão neutro, não deixar de molho, lavar separado.",
+  care: "Secar à sombra. Não usar alvejante.",
+  notes: "A cor pode variar conforme iluminação. Use lingerie neutra." },
+        { id: 2,
+  name: "Legging Cos Cruzado + Top Bicolor Preto/Off",
+  price: 199.00,
+  category: "LEGGING + TOP",
+  gender: "FEMININO",
+  imgs: [
+    "assets/img/roupas/top+legging/legging-cos-cruzado+top-bicolor-preto-off/foto-1.jpeg",
+    "assets/img/roupas/top+legging/legging-cos-cruzado+top-bicolor-preto-off/foto-2.jpeg",
+  ],
+  badge: "NEW",
+
+  description: "Peça ideal para treinos, com alta compressão e zero transparência.",
+
+  sizes: ["38 ao 42"],
+  composition: "Tecido Jacquard Canelado Compressão Kapana - 76% Poliamida 24% Elastano",
+  washing: "Lavar com sabão neutro, não deixar de molho, lavar separado.",
+  care: "Secar à sombra. Não usar alvejante.",
+  notes: "A cor pode variar conforme iluminação. Use lingerie neutra." },
+        { id: 3,
+  name: "Bermuda Básica Compressão + Top Bicolor Azul Marinho",
+  price: 199.00,
+  category: "BERMUDA + TOP",
+  gender: "FEMININO",
+  imgs: [
+    "assets/img/roupas/bermuda+top/bermuda-basica-compressao+top-bicolor-azul-marinho/foto-1.jpeg",
+    "assets/img/roupas/bermuda+top/bermuda-basica-compressao+top-bicolor-azul-marinho/foto-2.jpeg",
+  ],
+  badge: "NEW",
+
+  description: "Peça ideal para treinos, com alta compressão e zero transparência.",
+
+  sizes: ["38 ao 42"],
+  composition: "Tecido Jacquard Canelado Compressão Kapana - 76% Poliamida 24% Elastano",
+  washing: "Lavar com sabão neutro, não deixar de molho, lavar separado.",
+  care: "Secar à sombra. Não usar alvejante.",
+  notes: "A cor pode variar conforme iluminação. Use lingerie neutra." },
+        { id: 4,
+  name: "Macaquinho Compressão Rosinha",
+  price: 199.00,
+  category: "MACACÕES",
+  gender: "FEMININO",
+  imgs: [
+    "assets/img/roupas/macacoes/macaquinho-compressao-rosinha/foto-1.jpeg"
+  ],
+  badge: "NEW",
+
+  description: "Peça ideal para treinos, com alta compressão e zero transparência.",
+
+  sizes: ["38 ao 42"],
+  composition: "Tecido Canelado Compressão - 76% Poliamida 24% Elastano",
+  washing: "Lavar com sabão neutro, não deixar de molho, lavar separado.",
+  care: "Secar à sombra. Não usar alvejante.",
+  notes: "A cor pode variar conforme iluminação. Use lingerie neutra." },
         { id: 7, name: "Bermuda Tech Knit", price: 99.90, category: "BERMUDAS", gender: "MASCULINO", imgs: ["https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=500&auto=format&fit=crop", "https://images.unsplash.com/photo-1515464000451-9293111f9715?q=80&w=500&auto=format&fit=crop"], badge: "NEW", description: "Bermuda leve com tecnologia de absorção de suor para treinos intensos na academia." },
-        { id: 6, name: "Macacão Fit Preto", price: 219.90, category: "MACACÕES", gender: "FEMININO", imgs: ["img/roupas/macacoes/preto.jpeg", "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500&auto=format&fit=crop"], badge: "NEW", description: "Macacão peça única de alta performance. Ajuste perfeito e conforto absoluto." }
+        {
+  id: 6,
+  name: "Macacão Compressão Marjorie Preto",
+  price: 199.00,
+  category: "MACACÕES",
+  gender: "FEMININO",
+  imgs: [
+    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-1.jpeg",
+    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-2.jpeg",
+    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-3.jpeg",
+    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-4.jpeg"
+  ],
+  badge: "NEW",
+
+  description: "Peça ideal para treinos, com alta compressão e zero transparência.",
+
+  sizes: ["38 ao 42"],
+  composition: "76% Poliamida, 24% Elastano",
+  washing: "Lavar com sabão neutro, não deixar de molho, lavar separado.",
+  care: "Secar à sombra. Não usar alvejante.",
+  notes: "A cor pode variar conforme iluminação. Use lingerie neutra."
+}
     ];
 
     const menuStructure = {
-        'MASCULINO': ['TODOS', 'ACESSÓRIOS', 'BERMUDAS', 'BLUSAS', 'BONÉS', 'CALÇADOS', 'CAMISAS', 'REGATAS', 'SHORTS'],
-        'FEMININO': ['TODOS', 'ACESSÓRIOS', 'BERMUDAS', 'BLUSAS', 'BONÉS', 'CALÇADOS', 'CAMISAS', 'CROPPED', 'MACACÕES', 'REGATAS', 'SHORTS', 'TOPS'],
-        'PLUS SIZE': ['TODOS', 'BERMUDA', 'LEGGING', 'TOP']
+        'MASCULINO': ['TODOS', 'BERMUDAS', 'CAMISAS', 'SHORT'],
+        'FEMININO': ['TODOS', 'LEGGING + TOP', 'CALÇA FLARE + TOP', 'CORSÁRIO + TOP', 'BERMUDA + TOP', 'SHORT + TOP', 'BLUSAS', 'CAMISAS', 'CROPPED', 'MACACÕES', 'REGATAS'],
+        'PLUS SIZE': ['TODOS', 'BERMUDA + TOP', 'LEGGING + TOP']
     };
 
     let cart = [];
@@ -130,12 +218,22 @@ const productsData = [
                     <h4 class="fw-black text-white mb-4">R$ ${prod.price.toLocaleString('pt-BR', {minimumFractionDigits: 2})}</h4>
                     <div class="mb-4">
                         <label class="small text-secondary fw-bold text-uppercase d-block mb-2">Descrição</label>
-                        <p class="small text-light-emphasis">${prod.description}</p>
+                        <div class="small text-light-emphasis" style="white-space: pre-line;">
+  ${prod.description}
+</div>
+
+<div class="mt-3 small text-light-emphasis">
+  ${prod.sizes ? `<p><strong>Tamanhos:</strong> ${prod.sizes.join(', ')}</p>` : ''}
+  ${prod.composition ? `<p><strong>Composição:</strong> ${prod.composition}</p>` : ''}
+  ${prod.washing ? `<p><strong>Lavagem:</strong> ${prod.washing}</p>` : ''}
+  ${prod.care ? `<p><strong>Cuidados:</strong> ${prod.care}</p>` : ''}
+  ${prod.notes ? `<p><strong>Observações:</strong> ${prod.notes}</p>` : ''}
+</div>
                     </div>
                     <div class="mb-4">
                         <label class="small text-secondary fw-bold text-uppercase d-block mb-2">Tamanho</label>
                         <div class="d-flex flex-wrap gap-2">
-                            ${['P', 'M', 'G', 'GG'].map(s => `<button class="btn size-btn" onclick="selectSize(this, '${s}')">${s}</button>`).join('')}
+                            ${['ÚNICO'].map(s => `<button class="btn size-btn" onclick="selectSize(this, '${s}')">${s}</button>`).join('')}
                         </div>
                     </div>
                     <button class="btn btn-premium w-100 py-3 d-flex align-items-center justify-content-center gap-2" onclick="addToCart(${prod.id})">
@@ -218,8 +316,8 @@ const productsData = [
             total += item.price * item.qty;
         });
         msg += `\n*TOTAL: R$ ${total.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}*`;
-        window.open(`https://wa.me/5542984311219?text=${encodeURIComponent(msg)}`, '_blank');
+        window.open(`https://wa.me/554298518757?text=${encodeURIComponent(msg)}`, '_blank');
     }
 
-    // Initialize
+    // Iniciar
     renderProducts(productsData);
