@@ -1,20 +1,89 @@
 # PRD - Catálogo de Roupas de Academia
 
 ## 📌 Descrição do Projeto
-Este projeto consiste em um catálogo digital de roupas de academia, desenvolvido como uma aplicação web responsiva utilizando Bootstrap e JavaScript.
+Este projeto consiste em um catálogo digital de roupas de academia desenvolvido como aplicação web responsiva utilizando HTML, CSS, Bootstrap e JavaScript.
 
-## 🎯 Objetivo
-Permitir que usuários visualizem produtos de forma organizada, com foco em usabilidade e responsividade.
+O sistema permite que usuários visualizem produtos organizados em categorias, consultem preços, imagens e adicionem itens a um carrinho de compras simples.
 
-## 👤 Público-alvo
-Pessoas interessadas em roupas fitness, praticantes de academia e esportes.
+---
 
-## ⚙️ Funcionalidades principais
-- Visualização de produtos
-- Filtro por categorias (masculino e feminino)
-- Exibição de preço e imagem
-- Interface responsiva
-- Carrinho de compras simples
+# 🎯 Objetivo
 
-## 📱 Plataforma
-Aplicação web acessível via navegador (desktop e mobile)
+Desenvolver uma aplicação web moderna e responsiva para exibição de produtos fitness, oferecendo uma navegação simples, intuitiva e acessível em diferentes dispositivos.
+
+---
+
+# 👤 Público-Alvo
+
+- Pessoas interessadas em roupas fitness
+- Praticantes de academia
+- Atletas
+- Usuários que desejam visualizar produtos online de forma rápida
+
+---
+
+# ⚙️ Funcionalidades Principais
+
+## 📋 Catálogo de Produtos
+- Exibição de produtos em cards
+- Nome do produto
+- Imagem
+- Preço
+- Categoria
+
+## 🔍 Filtro de Categorias
+- Masculino
+- Feminino
+- Plus Size
+
+## 🛒 Carrinho de Compras
+- Adicionar produtos
+- Remover produtos
+- Exibir quantidade de itens
+- Calcular valor total
+
+## 📱 Responsividade
+- Compatível com desktop
+- Compatível com tablets
+- Compatível com smartphones
+
+## 🌐 Integração com API
+- Consumo de dados da Fake Store API
+- Carregamento dinâmico dos produtos
+
+---
+
+# 📱 Plataforma
+
+Aplicação web acessível via navegador desktop e mobile.
+
+---
+
+# 🎨 Interface
+
+- Layout moderno
+- Uso de Bootstrap Grid System
+- Navbar responsiva
+- Cards de produtos
+- Botões interativos
+
+---
+
+# 🚀 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- Bootstrap 5.3.3
+- JavaScript
+- Fake Store API
+
+---
+
+# 🔮 Melhorias Futuras
+
+- Sistema de login
+- Favoritos
+- Busca de produtos
+- Paginação
+- Persistência do carrinho com LocalStorage
+- Integração com sistema de pagamento
