@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  }
+  },
+  "scripts": {
+  "sass": "sass --watch scss/style.scss css/style.css"
+}
 }

@@ -5,8 +5,8 @@ const productsData = [
   category: "LEGGING + TOP",
   gender: "FEMININO",
   imgs: [
-    "assets/img/roupas/top+legging/top-sabrina+legging-cos-cruzado-bicolor-azul-marinho-off/foto-1.jpeg",
-    "assets/img/roupas/top+legging/top-sabrina+legging-cos-cruzado-bicolor-azul-marinho-off/foto-2.jpeg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934825/foto-1_xc9mxz.jpg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934825/foto-2_cxx22r.jpg",
   ],
   badge: "NEW",
 
@@ -23,8 +23,8 @@ const productsData = [
   category: "LEGGING + TOP",
   gender: "FEMININO",
   imgs: [
-    "assets/img/roupas/top+legging/legging-cos-cruzado+top-bicolor-preto-off/foto-1.jpeg",
-    "assets/img/roupas/top+legging/legging-cos-cruzado+top-bicolor-preto-off/foto-2.jpeg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934824/foto-1_if8wig.jpg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934824/foto-2_bxpkf8.jpg",
   ],
   badge: "NEW",
 
@@ -41,8 +41,8 @@ const productsData = [
   category: "BERMUDA + TOP",
   gender: "FEMININO",
   imgs: [
-    "assets/img/roupas/bermuda+top/bermuda-basica-compressao+top-bicolor-azul-marinho/foto-1.jpeg",
-    "assets/img/roupas/bermuda+top/bermuda-basica-compressao+top-bicolor-azul-marinho/foto-2.jpeg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934821/foto-1_sma3mm.jpg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934821/foto-2_ibx7ye.jpg",
   ],
   badge: "NEW",
 
@@ -59,7 +59,7 @@ const productsData = [
   category: "MACACÕES",
   gender: "FEMININO",
   imgs: [
-    "assets/img/roupas/macacoes/macaquinho-compressao-rosinha/foto-1.jpeg"
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934824/foto-1_pmv7wj.jpg"
   ],
   badge: "NEW",
 
@@ -78,10 +78,10 @@ const productsData = [
   category: "MACACÕES",
   gender: "FEMININO",
   imgs: [
-    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-1.jpeg",
-    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-2.jpeg",
-    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-3.jpeg",
-    "assets/img/roupas/macacoes/macacao-compressao-marjorie-preto/foto-4.jpeg"
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934822/foto-1_mbmzuw.jpg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934823/foto-2_fjob5l.jpg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934823/foto-3_wjmx1w.jpg",
+    "https://res.cloudinary.com/deq6a1tab/image/upload/f_auto,q_auto/v1779934823/foto-4_rsmmfe.jpg"
   ],
   badge: "NEW",
 

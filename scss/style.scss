@@ -1,3 +1,13 @@
+$primary-orange: #FF8C00;
+$surface-dark: #0e0e0e;
+$surface-container: #191919;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 :root {
             --primary-orange: #FF8C00;
             --surface-dark: #0e0e0e;
@@ -8,13 +18,17 @@
 
         body {
             font-family: 'Manrope', sans-serif;
-            background-color: var(--surface-dark);
+            background-color: $surface-dark;
             color: white;
             overflow-x: hidden;
         }
 
         h1, h2, h3, .font-lexend {
             font-family: 'Lexend', sans-serif;
+        }
+
+        .display-1 {
+        font-size: clamp(2.5rem, 8vw, 6rem);
         }
 
         .text-primary-orange { color: var(--primary-orange) !important; }
@@ -47,7 +61,7 @@
             background: linear-gradient(90deg, rgba(255, 140, 0, 0.15) 0%, transparent 100%);
             margin-bottom: 2px;
             font-family: 'Lexend', sans-serif;
-            font-size: 1.1rem;
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
         }
 
         .nav-link-sub {
@@ -62,21 +76,21 @@
             text-transform: capitalize;
         }
         .nav-link-sub:hover { 
-            color: var(--primary-orange); 
+            color: $primary-orange; 
             background: rgba(255,255,255,0.02);
             padding-left: 2.5rem;
         }
 
         /* Hero Section */
         .hero-section {
-            height: 450px;
+            height: 28rem;
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: flex-end;
             padding-bottom: 3rem;
         }
-        @media (min-width: 768px) { .hero-section { height: 600px; } }
+
         .hero-img {
             position: absolute;
             inset: 0;
@@ -95,20 +109,22 @@
 
         /* High-Performance Product Cards */
         .product-card {
-            background: var(--surface-container);
+            background: $surface-container;
             border: none;
             border-radius: 4px;
             transition: all 0.3s ease;
             height: 100%;
             position: relative;
         }
-        .product-card:hover { 
-            transform: translateY(-5px);
+        .product-card { 
             box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 0 15px rgba(255, 140, 0, 0.1);
+            &:hover {
+                transform: translateY(-5px);
+            }
         }
         .product-img-wrapper {
             position: relative;
-            height: 250px;
+            height: 300px;
             overflow: hidden;
             background: #111;
         }
@@ -131,10 +147,10 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            background: var(--primary-orange);
-            font-size: 10px;
+            background: $primary-orange;
+            font-size: 0.625rem;
             font-weight: 900;
-            padding: 4px 8px;
+            padding: 0.25rem 0.5rem;
             border-radius: 2px;
             z-index: 2;
         }
@@ -146,8 +162,8 @@
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: 11px;
-            padding: 12px;
+            font-size: 0.6875rem;
+            padding: 0.75rem;
             border-radius: 2px;
             box-shadow: 0 4px 15px rgba(253, 139, 0, 0.2);
         }
@@ -229,6 +245,7 @@
 
         /* Bottom Nav Mobile */
         .bottom-nav {
+            @include flexCenter;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -242,7 +259,7 @@
             text-align: center;
             color: #666;
             text-decoration: none;
-            font-size: 10px;
+            font-size: clamp(0.65rem, 1.5vw, 0.8rem);
             font-weight: 700;
             text-transform: uppercase;
             padding: 10px 0;
@@ -265,6 +282,11 @@
         }
         .size-btn.active { background: var(--primary-orange); border-color: var(--primary-orange); color: black; }
 
-        .display-1 {
-    font-size: clamp(2.5rem, 8vw, 6rem);
-        }
+    @media (min-width: 768px) { 
+        .hero-section { 
+            height: 37.5rem; 
+        } 
+
+        .
+    }
+        
