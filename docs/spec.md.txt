@@ -1,12 +1,28 @@
-# Especificação - Catálogo de Roupas de Academia
+# SDD - Especificação de Design de Software
 
-## 🧱 Estrutura do Projeto
+# 📌 Visão Geral
 
-- index.html
-- css/style.css
-- js/script.js
-- docs/
-- img/
+O sistema consiste em uma aplicação web de catálogo de roupas fitness desenvolvida utilizando HTML, CSS, Bootstrap e JavaScript.
+
+A aplicação utiliza uma API pública para carregamento dinâmico dos produtos.
+
+# 🧱 Estrutura do Projeto
+
+```text
+project/
+│
+├── index.html
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── img/
+│
+└── docs/
+    ├── prd.md
+    └── sdd.md
 
 ## 📦 Estrutura de Dados
 
@@ -19,7 +35,7 @@
 ### Categoria
 - masculino
 - feminino
-- acessórios
+- plus size
 
 ## 🔄 Funcionalidades
 
